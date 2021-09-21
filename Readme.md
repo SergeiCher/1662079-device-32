@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
-* Студент: [Сергей Черкас](https://up.htmlacademy.ru/htmlcss/32/user/1662079).
-* Наставник: `Неизвестно`.
+- Студент: [Сергей Черкас](https://up.htmlacademy.ru/htmlcss/32/user/1662079).
+- Наставник: [Роман Жарко](https://htmlacademy.ru/profile/id116336).
 
 ---
 
