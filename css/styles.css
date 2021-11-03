@@ -108,6 +108,7 @@ body {
 
 .user-menu {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   gap: 40px;
@@ -140,6 +141,7 @@ body {
 
 .navigation-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 40px;
   margin: 0;
   padding: 0;
@@ -196,8 +198,6 @@ body {
   align-self: flex-end;
   margin-right: 30px;
   margin-top: -160px;
-  font-family: Rubik, sans-serif;
-  font-style: normal;
   font-weight: 800;
   font-size: 180px;
   line-height: normal;
@@ -276,7 +276,7 @@ body {
 }
 
 .category-image-wrapper.bottom {
-  align-items: end;
+  align-items: flex-end;
 }
 
 .category-link {
@@ -423,7 +423,7 @@ body {
 
 .about-company-content {
   display: flex;
-  gap: 40px;
+  gap: 100px;
 }
 
 .contacts {
@@ -457,6 +457,7 @@ body {
 
 .contacts-list {
   margin-top: 25px;
+  margin-left: 15px;
   padding-top: 0;
   font-family: Rubik, sans-serif;
   font-style: normal;
@@ -473,6 +474,10 @@ body {
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
+}
+
+.contacts-working-hours {
+  list-style: none;
 }
 
 .contacts-link {
@@ -493,6 +498,7 @@ body {
 }
 
 .newsletter-content {
+   width: 100%;
   padding-top: 75px;
   padding-bottom: 130px;
 }
@@ -517,8 +523,24 @@ body {
   color: #000000;
 }
 
-.newsletter button {
+
+
+.newsletter-subscription {
   margin-top: 60px;
+
+}
+
+.newsletter-email {
+  padding: 18px 0;
+  border: none;
+  background-color: #f0f0f0;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.1);;
+  width: 600px;
+}
+
+.newsletter-button {
+  margin: -5px;
+  padding: 15px;
   font-family: Raleway, sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -527,6 +549,9 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #000000;
+  background-color: #f0f0f0;
+  border: 3px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0;
 }
 
 .newsletter-image {
@@ -548,34 +573,23 @@ body {
   margin-top: 62px;
 }
 
-.footer-address p {
-  font-family: Rubik, sans-serif;
-  font-size: 16px;
-  line-height: 19px;
-  color: #ffffff;
+.footer-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 35px;
 }
 
 .footer-navigation-li {
   display: flex;
-  font-family: Raleway, sans-serif;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 21px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: #ffffff;
   list-style: none;
 }
 
 .footer-navigation-adress {
   max-width: 238px;
   margin-right: 115px;
-  font-family: Rubik;
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 19px;
+  color: #ffffff;
 }
 
 .footer-navigation-phone {
@@ -588,15 +602,43 @@ body {
 
 .footer-navigation-link {
   margin-right: 10px;
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 .footer-social {
-  margin-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+
 }
 
-.footer-social li {
-  margin-bottom: -60px;
-  margin-right: 14px;
+.footer-social-decorate {
+  margin-top: 65px;
+  width: 80px;
+  height: 7px;
+  background-color: #FFC700;
+}
+
+.footer-social-list {
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 60px;
+  list-style: none;
+}
+
+.footer-social-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-right: 15px;
   width: 40px;
   height: 40px;
   align-items: center;
@@ -604,15 +646,24 @@ body {
   background: rgba(255, 255, 255, 0.3);
 }
 
-.footer-social-list {
-  display: flex;
-  margin-left: 500px;
+.footer-social-link {
+  margin-top: 50px;
+
 }
 
-.footer-social-link {
-  margin-left: 1025px;
-  margin-bottom: 60px;
-}
+
+/*
+.footer-social-list {
+
+  margin-bottom: -60px;
+  margin-right: 14px;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  list-style: none;
+} */
 
 .page-container {
   display: flex;
@@ -667,7 +718,7 @@ body {
   margin-left: -60px;
   margin-right: -70px;
   padding: 25px 70px 25px 60px;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 16px;
@@ -696,7 +747,7 @@ body {
 
 
 .filter-catalog-title {
-  font-family: Rubik, sans-serif;
+  margin-top: 80px;
   font-weight: bold;
   line-height: 20px;
   letter-spacing: -0.02em;
@@ -712,6 +763,10 @@ fieldset {
   border:0 none;
 }
 
+.control {
+  margin-top: 15px;
+}
+
 .control-label {
   font-family: Rubik, sans-serif;
   font-size: 16px;
@@ -721,6 +776,7 @@ fieldset {
 
 .filter-button {
   display: block;
+  margin-top: 50px;
   width: 100%;
   font-family: Raleway, sans-serif;
   font-style: normal;
