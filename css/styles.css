@@ -651,20 +651,6 @@ body {
 
 }
 
-
-/*
-.footer-social-list {
-
-  margin-bottom: -60px;
-  margin-right: 14px;
-  width: 40px;
-  height: 40px;
-  align-items: center;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.3);
-  list-style: none;
-} */
-
 .page-container {
   display: flex;
 }
@@ -713,7 +699,6 @@ body {
   background-size: 100%;
 }
 
-
 .filter-title {
   margin-left: -60px;
   margin-right: -70px;
@@ -744,7 +729,6 @@ body {
   color: #000000;
   background: #DCDCDC;
 }
-
 
 .filter-catalog-title {
   margin-top: 80px;
@@ -790,7 +774,7 @@ fieldset {
 }
 
 .products {
-  flex-grow: 1;
+  /* flex-grow: 1; */
   padding-left: 70px;
   padding-bottom: 70px;
 }
@@ -813,6 +797,13 @@ fieldset {
   background-color: #EBEBEB;
 }
 
+.products-list {
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 45px;
+  column-gap: 40px;
+}
+
 .button-sorting {
   margin-left: auto;
 }
@@ -822,11 +813,21 @@ fieldset {
   list-style: none;
 }
 
+.card-description {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 35px;
+}
+
 .card-title {
-  font-family: Rubik, sans-serif;
-  font-weight: bold;
+  max-width: 280px;
+}
+
+.card-link {
+  font-weight: 700;
   line-height: 24px;
   letter-spacing: -0.02em;
+  text-decoration: none;
   color: #000000;
 }
 
@@ -886,7 +887,7 @@ fieldset {
 }
 
 .pagination-link-item {
-  font-family: Rubik, sans-serif;
+  text-decoration: none;
   font-size: 16px;
   line-height: 19px;
   color: #444444;
@@ -894,6 +895,7 @@ fieldset {
 }
 
 .pagination-link {
+  text-decoration: none;
   font-family: Raleway, sans-serif;
   font-style: normal;
   font-weight: 800;
